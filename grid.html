@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            
+            background-color: #1A1C28;
+            
+        }
+
+    
+        header nav {
+            margin: 20px;;
+            display: flex;
+            gap: 20px;
+        }
+        header nav a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 24px;
+            background-color: #343a40;
+            font-family: sans-serif;
+        }
+
+        
+        .a {
+            background-color: #EB5020;
+            grid-area: a;
+            padding: 80px 200px;
+        }
+
+        .b {
+            background-color: #FFA401;
+            grid-area: b;
+            padding: 80px;
+        }
+
+        .c {
+            background-color: #05AA42;
+            grid-area: c;
+            padding: 80px 150px;
+        }
+
+        .d {
+            background-color: #01AEFD;
+            grid-area: d;
+            padding: 40px;
+        }
+
+        .e {
+            background-color: #01AEFD;
+            grid-area: e;
+            padding: 40px;
+        }
+
+        .container {
+            margin: 100px auto;
+            display: grid;
+            grid-template-areas: 
+                'a a b'
+                'c d d'
+                'c e e';
+            padding: 10px;
+            gap: 10px;
+            width: 600px;
+        }
+
+        .container > div {
+            /* padding: 20px 0; */
+            font-size: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="./index.html">Flex</a>
+            <a href="./grid.html">Grid</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="c"></div>
+        <div class="d"></div>
+        <div class="e"></div>
+    </div>
+</body>
+</html>
